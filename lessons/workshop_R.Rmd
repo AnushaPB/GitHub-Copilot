@@ -52,7 +52,7 @@ Now that we have all the extensions we need, we can start running R code! To run
 ### 🥊 Challenge 2: 
 Run the R code below and see what happens.
 ```{r}
-print("Hello World!")
+print("Yippee!")
 ```
 
 When you run this code you will notice that a new window appears below: the `Terminal`. This is where the output of your code will appear. You can also run code in the terminal by typing directly into it and pressing `Enter`. If you have used RStudio before, the terminal is similar to the console in RStudio.
@@ -114,22 +114,6 @@ GitHub Copilot chat allows you to directly ask questions to GitHub Copilot. To o
 
 ### 🥊 Challenge 4:
 Open the chat, highlight the code above, and ask Copilot to explain it. Then ask Copilot to give you code to generate a summary of the data in the `gap` data frame by plotting histograms of "lifeExp" and "gdpPercap".
-
-💡 **Tip**: You can include the following commands (known as **"smart actions"**) in your chats to ask Copilot to do and reference specific things:
-`@workspace` - Ask about your workspace
-`@vscode` - Ask questions about VS Code
-`@terminal` - Ask how to do something in the terminal
-
-`/explain` - Explain how the referenced code works
-`/fix` - Propose a fix for the problems in the selected code
-
-`#selection` - Reference the currently selected or highlighted code
-`#editor` - Reference the visible code in the active editor (i.e. on your screen)
-`#file` - Choose a file in the workspace
-
-For example, if you wanted to explain this file, you could prompt `#file workshop_R.Rmd What is the purpose of this file?`.
-
-For more tips and smart actions checkout: https://code.visualstudio.com/docs/copilot/getting-started-chat
 
 From Challenge 4 you should have gotten code that looks something like this:
 ```{r}
