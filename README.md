@@ -6,9 +6,9 @@
 This repository contains the materials for D-Lab GitHub Copilot workshop. 
 
 ### Prerequisites
-We recommend attending D-Lab's [R
+Though GitHub Copilot is language agnostic, our examples will be in R. Therefore, we recommend attending D-Lab's [R
 Fundamentals](https://github.com/dlab-berkeley/R-Fundamentals) series
-prior to this workshop.
+prior to this workshop. If you use a language that is not R, you are still welcome to attend. Many of the examples will have analogs in other languages, such as Python.
 
 Check D-Lab's [Learning Pathways](https://dlab-berkeley.github.io/dlab-workshops/python_path.html) to figure out which of our workshops to take!
 
@@ -56,7 +56,7 @@ You can create a codespace for this repository by:
 The codespace uploads this repository, along with any necessary packages, and
 allows you to run the materials in the cloud in a virtual Visual Studio Code that will look basically like what is on your computer.
 No installation is necessary from your end - you only need an internet browser. To save your work, the easiest way is to copy and paste
-the markdown files into a local file on your computer. If you are comfortable with Git, you can also fork and commit your changes to your own repository (instructions [here](LINK)).
+the markdown files into a local file on your computer. If you are comfortable with Git, you can also fork this repository and commit your changes to your fork (instructions [here](https://docs.github.com/en/codespaces/getting-started/understanding-the-codespace-lifecycle#saving-changes-in-a-codespace)).
 
 ## Run the Code
 
