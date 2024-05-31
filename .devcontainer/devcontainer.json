@@ -1,8 +1,5 @@
 {
   "image": "ghcr.io/anushapb/github-copilot:latest",
-  "hostRequirements": {
-    "cpus": 4
-  },
   "name": "GitHub-Copilot Workshop",
   "postCreateCommand": "sudo cp --force ./.devcontainer/welcome-message.txt /usr/local/etc/vscode-dev-containers/first-run-notice.txt",
   "customizations": {
