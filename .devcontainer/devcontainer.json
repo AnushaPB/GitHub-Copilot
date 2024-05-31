@@ -6,6 +6,9 @@
 	        "GitHub.copilot",
 	        "GitHub.copilot-chat"
     	],
+	"hostRequirements": {
+	      "cpus": 4
+	},
 	"runArgs": [ "--security-opt", "seccomp=unconfined" ],
 	"waitFor": "onCreateCommand",
 	"features": {
