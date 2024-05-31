@@ -1,7 +1,6 @@
 {
 	"name": "R Environment",
-	// CHANGE: from ghcr.io/anushapb/codespacer:latest to ghcr.io/username/reponame:latest
-	"image": "ghcr.io/anushapb/github-copilot:latest",
+	"image": "ghcr.io/rocker-org/devcontainer/tidyverse:4.3",
 	"extensions": [
 	        "GitHub.copilot",
 	        "GitHub.copilot-chat"
