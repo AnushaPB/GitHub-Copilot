@@ -3,7 +3,7 @@
   "hostRequirements": {
     "cpus": 4
   },
-  "name": "Try Copilot",
+  "name": "GitHub-Copilot Workshop",
   "customizations": {
     "codespaces": {
       "openFiles": ["README.md"]
@@ -18,7 +18,8 @@
         }
       },
       "extensions": [
-        "github.copilot"
+        "github.copilot",
+        "reditorsupport.r"
       ]
     }
   }
