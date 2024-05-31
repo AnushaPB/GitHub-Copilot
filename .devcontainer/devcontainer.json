@@ -1,23 +1,25 @@
 {
-  "image":  "ghcr.io/anushapb/github-copilot:latest",
+  "image": "ghcr.io/anushapb/github-copilot:latest",
   "hostRequirements": {
-      "cpus": 4
+    "cpus": 4
   },
   "name": "Try Copilot",
   "customizations": {
-      "codespaces": {
-			"openFiles": ["README.md"]
-		  },
-      "vscode": {
-      "settings":  {
-			"r.rterm.linux": "/usr/local/bin/radian",
-			"r.bracketedPaste": true,
-			"r.plot.useHttpgd": true,
-			"[r]": {
-			  "editor.wordSeparators": "`~!@#%$^&*()-=+[{]}\\|;:'\",<>/?"
-			},
+    "codespaces": {
+      "openFiles": ["README.md"]
+    },
+    "vscode": {
+      "settings": {
+        "r.rterm.linux": "/usr/local/bin/radian",
+        "r.bracketedPaste": true,
+        "r.plot.useHttpgd": true,
+        "[r]": {
+          "editor.wordSeparators": "`~!@#%$^&*()-=+[{]}\\|;:'\",<>/?"
+        }
+      },
       "extensions": [
         "github.copilot"
-      ]}
+      ]
+    }
   }
 }
