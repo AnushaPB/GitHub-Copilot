@@ -43,13 +43,11 @@ Now that you have opened a folder, you will see an `Explorer` panel appear with 
 1. R - This extension provides support for the R programming language. You must have R already installed on your computer to use this extension.
 2. GitHub Copilot - This extension is what gives us access to Copilot in VS Code
 
-### 🥊 Challenge 1: 
 In the search bar, type R. Click on the R extension and then click the green `Install` button. Repeat for the GitHub Copilot extension.
 
 ### Running code in Visual Studio Code
 Now that we have all the extensions we need, we can start running R code! To run a line of code, click on the line you want to run and press `Ctrl + Enter`. To run multiple lines of code, highlight the lines you want to run and press `Ctrl + Enter`. If you are working in an R Markdown file, you can run a code chunk by clicking on the `Run Chunk` button that appears at the top of the chunk.
 
-### 🥊 Challenge 2: 
 Run the R code below and see what happens.
 ```{r}
 print("Yippee!")
@@ -80,7 +78,6 @@ Once we have installed the `httpgd` package, you need to set `httpgd` as the def
 2. Search for `r.plot.useHttpgd` in the search bar
 3. Click on the tick box to set it to true
 
-### 🥊 Challenge 3:
 Check that both tidyverse and httpgd are installed and working by running the code below:
 ```{r}
 # Create a tiny data.frame
@@ -112,11 +109,14 @@ getwd()
 
 GitHub Copilot chat allows you to directly ask questions to GitHub Copilot. To open the chat, cick on the icon that looks like two text bubbles on the left-hand sidebar. You can ask Copilot to generate code, explain code, or provide examples. You can also start a chat by pressing `Ctrl + Shift + I`.
 
-### 🥊 Challenge 4:
-Open the chat, highlight the code above, and ask Copilot to explain it. Then ask Copilot to give you code to generate a summary of the data in the `gap` data frame by plotting histograms of "lifeExp" and "gdpPercap".
+### 🥊 Challenge 1:
+Open the chat, highlight the code in the cell below, and ask Copilot to explain it. Then ask Copilot to give you code to generate a summary of the data in the `gap` data frame by plotting histograms of "lifeExp" and "gdpPercap".
 
 ```{r}
-# Add code here
+gap <- read.csv(file = "data/gapminder.csv")
+head(gap)
+
+# Add new code here
 ```
 
 From Challenge 4 you should have gotten code that looks something like this:
@@ -148,7 +148,7 @@ This is a good example of what Copilot can do for you, but also where you as the
 ### In-line Chat
 You can start an in-line chat with copilot by pressing `Ctrl + I`. This will allow you to ask Copilot for help with the code you are currently writing. When you activate in-line chat while highlighting code, Copilot will edit the code in the highlighted area.
 
-### 🥊 Challenge 5: 
+### 🥊 Challenge 2: 
 Highlight this ggplot code, press `Ctrl + I`, and ask Copilot to change the background of the plot to your favorite color (e.g. "purple"), increase the text size of the x and y-axis titles to size 20, and make the title center aligned. This is super helpful for when you can't remember what the exact syntax is for a specific ggplot2 element.
 ```{r}
 ggplot(gap, aes(x = gdpPercap)) +
@@ -158,7 +158,7 @@ ggplot(gap, aes(x = gdpPercap)) +
 
 ⚠️ **Warning**: Sometimes you may notice that Copilot doesn't do everything you told it to. This is because Copilot is still learning and may not always understand what you are asking for. You can always ask it again or make the changes yourself. For example, when you asked to change the background, it correctly changed the background of the plot, but what you might have really wanted to do is to change the background of the panel; in that case, you would have to update your request to specify that you want to change the panel background.
 
-### 🥊 Challenge 6: 
+### 🥊 Challenge 3: 
 You can also use in-line chat in a blank line to generate new code. Start in-line chat in the empty chunk below and ask Copilot to generate code to calculate the mean and variance of the "pop" column in the `gap` data grouped by the "country" column.
 ```{r}
 # Start in-line chat here
@@ -169,7 +169,7 @@ You may have noticed throughout this workshop that Copilot provides suggestions 
 
 Suggestions are automatically triggered by the code your write, based on context from the code you have already written. 
 
-### 🥊 Challenge 6: 
+### 🥊 Challenge 4: 
 Start typing `unique_countries <- gap` and see what suggestions Copilot gives you. Accept the suggestion that completes the code to create a vector of unique countries in the `gap` data frame.
 ```{r}
 # Start typing here
@@ -177,7 +177,7 @@ Start typing `unique_countries <- gap` and see what suggestions Copilot gives yo
 
 ⚠️ **Warning**: Copilot sometimes provides suggestions that are not what you want. You can always ignore the suggestion and continue typing. Copilot can change over time and give different suggestions based on even minor differences in context clues. You can test this out by deleting the line of code you just wrote and typing it again to see if you get the same suggestion.
 
-### 🥊 Challenge 7:
+### 🥊 Challenge 5:
 You can also trigger suggestions by providing comments in your code. These commments allow you to give more detailed information and context for the in-line suggestions. Start typing `# Calculate average gdpPercap and lifeExp grouped by continent for the year 2007` and see what suggestions Copilot gives you. 
 
 💡 **Tip**: You may have to start writing `gap %>%` to trigger the suggestions.
@@ -185,7 +185,7 @@ You can also trigger suggestions by providing comments in your code. These commm
 # Start typing here
 ```
 
-### 🥊 Challenge 8: 
+### 🥊 Challenge 6: 
 
 Copilot can be really useful for cleaning up your code. For example, we have code below that is a bit untidy (missing indents, no comments, long single lines of code). Highlight the code below and in the chat ask Copilot to format this code and add comments.
 ```{r}
