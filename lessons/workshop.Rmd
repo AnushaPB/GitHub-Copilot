@@ -23,10 +23,6 @@ Throughout this workshop series, we will use the following icons:
 
 💡 **Tip**: How to do something a bit more efficiently or effectively.
 
-📝 **Poll**: A zoom poll to help you learn.
-
-🎬 **Demo**: Showing off something more advanced so you know what you can use R for in the future
-
 ## 1. Getting Comfortable with Visual Studio Code
 
 Visual Studio Code (VS Code) is a free code editor. When you start VS Code, you will be greeted by a Welcome screen that prompts you to start by opening a file or folder. Click `Open Folder` and open the GitHub-Copilot workshop folder that you downloaded from GitHub. 
@@ -135,7 +131,9 @@ ggplot(gap, aes(x = gdpPercap)) +
   labs(x = "GDP per Capita", title = "Histogram of GDP per Capita")
 ```
 
-Note a few things:
+🔔 **Question**: What do you notice about this code versus the code you would have written?
+
+Some things that you may have noticed are:
 
 1. It loads `ggplot2` because it knows we need it for plotting - however, this is unnecessary because we have loaded the `tidyverse` package which includes `ggplot2`. However, GitHub Copilot doesn't know that. 
 
@@ -185,9 +183,10 @@ You can also trigger suggestions by providing comments in your code. These commm
 # Start typing here
 ```
 
-### 🥊 Challenge 6: 
+Now you have seen how we can use both the chat and in-line chat to interact with Copilot. So far we have used some simple examples, but Copilot can also help with more complex code.
 
-Copilot can be really useful for cleaning up your code. For example, we have code below that is a bit untidy (missing indents, no comments, long single lines of code). Highlight the code below and in the chat ask Copilot to format this code and add comments.
+### 🥊 Challenge 6: 
+Here, we have code below that is a bit untidy (missing indents, no comments, long single lines of code). Highlight the code below and in the chat ask Copilot to reformat this code and add comments.
 ```{r}
 gap_mean <- gap%>%filter(continent=="Asia")%>%group_by(year)%>%summarise(mean = mean(lifeExp))
 ggplot(gap_mean, aes(x = year, y = mean)) +
@@ -219,6 +218,15 @@ We can take this clean-up a step further and ask it to make a function from our 
 ```{r}
 # Paste the new function code here
 ```
+
+We can also prompt Copilot to generate a function from scratch. You can do this by either using the chat, prompting with a comment (i.e., `# Create a function that...`), or just starting to write a function (i.e., `function_name <- function(...)`; in this case, Copilot will use the name of the function to guess at what you are trying to make). Try to create your own custom function below by using this last approach. For example, you could prompt Copilot to return the colors of the rainbow by writing `rainbow_colors <- function()`.
+
+💡 **Tip**: You may have to use some comments (e.g., `# Return a vector of colors`) to give more context to Copilot for crafting your function.
+```{r}
+# Start typing here
+```
+
+🔔 **Question**: What did Copilot do correctly and/or incorrectly in generating your custom function?
 
 ## Key Points
 
