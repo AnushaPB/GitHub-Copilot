@@ -1,11 +1,12 @@
-# D-Lab GitHub Copilot Workshop
+# D-Lab Copilot Assisted Coding Workshop
 
 [![Binder](https://mybinder.org/badge_logo.svg)](BINDER_LINK_HERE)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-This repository contains the materials for D-Lab GitHub Copilot workshop. 
+This repository contains the materials for D-Lab Copilot Assisted Coding Workshop. 
 
 ### Prerequisites
+
 Though GitHub Copilot is language agnostic, our examples will be in R. Therefore, we recommend attending D-Lab's [R
 Fundamentals](https://github.com/dlab-berkeley/R-Fundamentals) series
 prior to this workshop. If you use a language that is not R, you are still welcome to attend. Many of the examples will have analogs in other languages, such as Python.
